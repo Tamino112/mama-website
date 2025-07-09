@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="logo-icon.png" type="image/png" />
-  <title>Weiterbildung mit Liane</title>
+  <link rel="icon" href="logo-icon.png" type="image/png" />
+  <title>Weiterbildung mit [Name]</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,6 +13,7 @@
     <a href="index.html">Start</a>
     <a href="#ueber">Über mich</a>
     <a href="angebote.html">Angebote</a>
+    <a href="#kontakt">Kontakt</a>
   </nav>
 
   <header id="start">
@@ -38,7 +39,7 @@
       <p>Ich heiße [Name] und begleite Menschen dabei, ihr Potenzial zu entdecken und zu entfalten. Mit jahrelanger Erfahrung verbinde ich Fachwissen mit Menschlichkeit.</p>
       <ul>
         <li>Zertifizierte Trainerin & Coach</li>
-        <li>Schwerpunkt: Soft Skills & mentale Stärke</li>
+        <li>Soft Skills & mentale Stärke</li>
         <li>Empathisch, praxisnah & strukturiert</li>
       </ul>
     </div>
@@ -52,11 +53,31 @@
     </div>
   </section>
 
+  <!-- 📨 Kontaktformular -->
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="card">
+      <form action="https://formspree.io/f/YOUR-ID" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="message" rows="5" required></textarea>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </div>
+  </section>
+
   <footer>
     <div class="footer-nav">
-      <a href="index.html">Start</a>
-      <a href="angebote.html">Angebote</a>
+      <a href="#start">Start</a>
       <a href="#ueber">Über mich</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="#kontakt">Kontakt</a>
     </div>
     <p>&copy; 2025 Weiterbildung mit [Name] · kontakt@beispiel.de</p>
   </footer>

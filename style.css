@@ -37,11 +37,10 @@ nav a:hover {
 .hero-logo {
   display: block;
   margin: 0 auto 1.5rem auto;
-  max-width: 220px; /* 🟢 größeres Logo */
+  max-width: 220px;
   height: auto;
   opacity: 0.97;
 }
-
 
 /* Hero */
 .hero {
@@ -49,12 +48,14 @@ nav a:hover {
   padding: 5rem 2rem;
 }
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #2c3e50;
 }
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #555;
+  max-width: 700px;
+  margin: auto;
 }
 
 /* Sektionen */
@@ -98,43 +99,3 @@ ul li {
 ul li::before {
   content: "✔";
   position: absolute;
-  left: 0;
-  color: #4f709c;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background-color: rgba(180, 235, 190, 0.3);
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-.footer-nav {
-  margin-bottom: 1rem;
-}
-.footer-nav a {
-  margin: 0 1rem;
-  color: #4f709c;
-  text-decoration: none;
-}
-
-/* Animation */
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Desktop-Optimierung */
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 18px;
-  }
-  .hero h1 {
-    font-size: 3rem;
-  }
-  .hero p {
-    font-size: 1.4rem;
-    max-width: 700px;
-    margin: auto;
-  }
-  .
