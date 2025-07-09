@@ -6,35 +6,34 @@ body {
   margin: 0;
   padding-top: 80px;
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgba(180, 235, 190, 0.15); /* sanfter grüner Hintergrund */
+  background-color: rgba(180, 235, 190, 0.15);
   color: #333;
 }
 
-/* Navbar: nicht transparent */
+/* Navbar */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #64b478; /* deckendes Grün */
+  background-color: #64b478;
   padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: opacity 0.3s;
 }
 nav a:hover {
   opacity: 0.8;
 }
 
-/* Logo über dem Titel */
+/* Logo */
 .hero-logo {
   display: block;
   margin: 0 auto 1rem auto;
@@ -50,7 +49,6 @@ nav a:hover {
 }
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
   color: #2c3e50;
 }
 .hero p {
@@ -67,12 +65,12 @@ section {
   opacity: 0;
 }
 h2 {
-  color: #2c3e50;
   text-align: center;
+  color: #2c3e50;
   margin-bottom: 2rem;
 }
 
-/* Karten & Grid */
+/* Karten */
 .card {
   background: white;
   padding: 2rem;
@@ -92,22 +90,15 @@ ul {
   padding-left: 0;
 }
 ul li {
-  margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
+  margin-bottom: 0.5rem;
 }
 ul li::before {
   content: "✔";
   position: absolute;
   left: 0;
   color: #4f709c;
-}
-
-/* Testimonials */
-.testimonials small {
-  display: block;
-  margin-top: 0.5rem;
-  color: #666;
 }
 
 /* Footer */
@@ -128,17 +119,21 @@ footer {
 
 /* Animation */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* 💻 Desktop-Optimierung */
+/* Desktop-Optimierung */
 @media screen and (min-width: 1024px) {
   body {
     font-size: 18px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.4rem;
+    max-width: 700px;
+    margin: auto;
+  }
+  .
