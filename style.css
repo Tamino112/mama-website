@@ -1,4 +1,4 @@
-/* Grundstruktur & Reset */
+/* Reset & Grundstruktur */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -11,19 +11,19 @@ body {
   color: #333;
 }
 
-/* Navigationsleiste */
+/* Navbar */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #64b478; /* nicht transparent */
+  background-color: #64b478;
   padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 nav a {
   color: white;
@@ -34,11 +34,11 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* Logo über dem Titel */
+/* Logo */
 .hero-logo {
   display: block;
   margin: 0 auto 1.5rem auto;
-  max-width: 220px; /* größeres Logo */
+  max-width: 220px;
   height: auto;
   opacity: 0.97;
 }
@@ -50,8 +50,8 @@ nav a:hover {
 }
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
   color: #2c3e50;
+  margin-bottom: 1rem;
 }
 .hero p {
   font-size: 1.4rem;
@@ -66,7 +66,7 @@ section {
   max-width: 1000px;
   margin: auto;
   animation: fadeInUp 1s ease forwards;
-  opacity: 0;
+  opacity: 1; /* ✅ Sichtbar beim Start */
 }
 h2 {
   text-align: center;
@@ -74,7 +74,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Karten & Layout */
+/* Karten */
 .card {
   background: white;
   padding: 2rem;
@@ -88,7 +88,7 @@ h2 {
   gap: 2rem;
 }
 
-/* Listen mit Häkchen */
+/* Listen */
 ul {
   list-style: none;
   padding-left: 0;
@@ -128,18 +128,6 @@ footer {
   text-decoration: none;
 }
 
-/* Animationen */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* Kontaktformular */
 form {
   display: flex;
@@ -165,7 +153,19 @@ button:hover {
   background-color: #519962;
 }
 
-/* Desktop-Optimierung */
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive für Desktop */
 @media screen and (min-width: 1024px) {
   body {
     font-size: 18px;
