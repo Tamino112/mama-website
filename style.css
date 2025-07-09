@@ -1,23 +1,23 @@
-/* Reset & Grundstruktur */
+/* Grundstruktur & Reset */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  padding-top: 80px; /* Platz für fixe Navbar */
+  padding-top: 80px;
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgba(180, 235, 190, 0.15); /* Helles, transparentes Grün */
+  background-color: rgba(180, 235, 190, 0.15); /* sanfter grüner Hintergrund */
   color: #333;
 }
 
-/* Navbar */
+/* ✅ NAVBAR mit deckendem Grün */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #64b478; /* kräftiges Grün, nicht transparent */
+  background-color: #64b478; /* kein rgba, 100% deckend */
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* Hero-Bereich */
+/* HERO */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -50,7 +50,7 @@ nav a:hover {
   color: #555;
 }
 
-/* Sektionen */
+/* SEKTIONEN */
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
@@ -64,7 +64,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Karten & Grids */
+/* KARTEN & GRIDS */
 .card {
   background: white;
   padding: 2rem;
@@ -78,7 +78,7 @@ h2 {
   gap: 2rem;
 }
 
-/* Listen */
+/* LISTEN */
 ul {
   list-style: none;
   padding-left: 0;
@@ -95,10 +95,17 @@ ul li::before {
   color: #4f709c;
 }
 
-/* Footer */
+/* TESTIMONIALS */
+.testimonials small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  background-color: rgba(180, 235, 190, 0.3); /* Heller grüner Footer */
+  background-color: rgba(180, 235, 190, 0.3); /* sanfter grüner Footer */
   padding: 2rem;
   font-size: 0.9rem;
 }
@@ -111,7 +118,7 @@ footer {
   text-decoration: none;
 }
 
-/* Animation */
+/* ANIMATION */
 @keyframes fadeInUp {
   from {
     opacity: 0;
