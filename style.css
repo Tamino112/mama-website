@@ -17,7 +17,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(100, 180, 120, 0.7); /* Transparente grüne Leiste */
+  background-color: #64b478; /* kräftiges Grün, nicht transparent */
   padding: 1rem;
   display: flex;
   justify-content: center;
