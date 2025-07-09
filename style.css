@@ -1,4 +1,3 @@
-/* Grundstruktur & Reset */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -11,13 +10,13 @@ body {
   color: #333;
 }
 
-/* ✅ NAVBAR mit deckendem Grün */
+/* Navbar: nicht transparent */
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #64b478; /* kein rgba, 100% deckend */
+  background-color: #64b478; /* deckendes Grün */
   padding: 1rem;
   display: flex;
   justify-content: center;
@@ -35,7 +34,16 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* HERO */
+/* Logo über dem Titel */
+.hero-logo {
+  display: block;
+  margin: 0 auto 1rem auto;
+  max-width: 150px;
+  height: auto;
+  opacity: 0.95;
+}
+
+/* Hero */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -50,7 +58,7 @@ nav a:hover {
   color: #555;
 }
 
-/* SEKTIONEN */
+/* Sektionen */
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
@@ -64,7 +72,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* KARTEN & GRIDS */
+/* Karten & Grid */
 .card {
   background: white;
   padding: 2rem;
@@ -78,7 +86,7 @@ h2 {
   gap: 2rem;
 }
 
-/* LISTEN */
+/* Listen */
 ul {
   list-style: none;
   padding-left: 0;
@@ -95,17 +103,17 @@ ul li::before {
   color: #4f709c;
 }
 
-/* TESTIMONIALS */
+/* Testimonials */
 .testimonials small {
   display: block;
   margin-top: 0.5rem;
   color: #666;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   text-align: center;
-  background-color: rgba(180, 235, 190, 0.3); /* sanfter grüner Footer */
+  background-color: rgba(180, 235, 190, 0.3);
   padding: 2rem;
   font-size: 0.9rem;
 }
@@ -118,7 +126,7 @@ footer {
   text-decoration: none;
 }
 
-/* ANIMATION */
+/* Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -129,3 +137,8 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* 💻 Desktop-Optimierung */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
