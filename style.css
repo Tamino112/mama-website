@@ -1,124 +1,46 @@
-/* Reset & Grundstruktur */
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
+/* 🌿 Sanfter grüner Hintergrund */
 body {
+  background-color: rgba(0, 128, 0, 0.08); 
   margin: 0;
-  padding-top: 80px; /* Platz für fixe Navbar */
   font-family: 'Segoe UI', sans-serif;
-  background-color: rgba(180, 235, 190, 0.15); /* Helles, transparentes Grün */
-  color: #333;
+  color: #1a1a1a;
 }
 
-/* Navbar */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(100, 180, 120, 0.7); /* Transparente grüne Leiste */
-  padding: 1rem;
+/* 🧭 Transparente Navigationsleiste */
+.navbar {
+  background-color: rgba(0, 128, 0, 0.3); 
+  padding: 15px 30px;
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  gap: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
 }
-nav a {
-  color: #fff;
+
+.navbar a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: opacity 0.3s;
-}
-nav a:hover {
-  opacity: 0.8;
+  font-size: 1.1em;
 }
 
-/* Hero-Bereich */
-.hero {
-  text-align: center;
-  padding: 5rem 2rem;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-}
-.hero p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* Sektionen */
+/* 📄 Inhaltliche Abschnitte */
 section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
+  padding: 80px 30px;
+  max-width: 800px;
   margin: auto;
-  animation: fadeInUp 1s ease forwards;
-  opacity: 0;
-}
-h2 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
-/* Karten & Grids */
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+h1 {
+  color: darkgreen;
+  margin-bottom: 20px;
 }
 
-/* Listen */
 ul {
-  list-style: none;
-  padding-left: 0;
+  padding-left: 20px;
 }
+
 ul li {
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #4f709c;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background-color: rgba(180, 235, 190, 0.3); /* Heller grüner Footer */
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-.footer-nav {
-  margin-bottom: 1rem;
-}
-.footer-nav a {
-  margin: 0 1rem;
-  color: #4f709c;
-  text-decoration: none;
-}
-
-/* Animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  margin-bottom: 10px;
 }
