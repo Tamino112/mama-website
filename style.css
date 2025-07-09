@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding-top: 80px; /* Platz für fixe Navbar */
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #f6f9fc, #ddeaf1);
+  background-color: rgba(180, 235, 190, 0.15); /* Helles, transparentes Grün */
   color: #333;
 }
 
@@ -17,12 +17,13 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4f709c;
+  background-color: rgba(100, 180, 120, 0.7); /* Transparente grüne Leiste */
   padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 nav a {
   color: #fff;
@@ -31,7 +32,7 @@ nav a {
   transition: opacity 0.3s;
 }
 nav a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* Hero-Bereich */
@@ -94,17 +95,10 @@ ul li::before {
   color: #4f709c;
 }
 
-/* Testimonials */
-.testimonials small {
-  display: block;
-  margin-top: 0.5rem;
-  color: #666;
-}
-
 /* Footer */
 footer {
   text-align: center;
-  background-color: #ddeaf1;
+  background-color: rgba(180, 235, 190, 0.3); /* Heller grüner Footer */
   padding: 2rem;
   font-size: 0.9rem;
 }
