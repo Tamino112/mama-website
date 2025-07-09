@@ -36,11 +36,12 @@ nav a:hover {
 /* Logo */
 .hero-logo {
   display: block;
-  margin: 0 auto 1rem auto;
-  max-width: 150px;
+  margin: 0 auto 1.5rem auto;
+  max-width: 220px; /* 🟢 größeres Logo */
   height: auto;
-  opacity: 0.95;
+  opacity: 0.97;
 }
+
 
 /* Hero */
 .hero {
