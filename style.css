@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* ✅ NAVIGATION */
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -20,14 +20,9 @@ nav {
   padding: 1rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.nav-links {
-  display: flex;
-  gap: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 nav a {
   color: white;
@@ -38,38 +33,7 @@ nav a:hover {
   opacity: 0.8;
 }
 
-/* ☰ Hamburger (nur auf Handy) */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-}
-
-/* Mobiles Menü */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #64b478;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 4rem 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  z-index: 999;
-}
-.mobile-menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-}
-.mobile-menu.open {
-  display: flex;
-}
-
-/* ✅ HERO */
+/* Logo */
 .hero-logo {
   display: block;
   margin: 0 auto 1.5rem auto;
@@ -77,6 +41,8 @@ nav a:hover {
   height: auto;
   opacity: 0.97;
 }
+
+/* Hero */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -92,7 +58,7 @@ nav a:hover {
   margin: auto;
 }
 
-/* ✅ SEKTIONEN */
+/* Sektionen */
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
@@ -106,12 +72,12 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* ✅ KARTEN */
+/* Karten */
 .card {
   background: white;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
 }
 .card-grid {
@@ -120,7 +86,7 @@ h2 {
   gap: 2rem;
 }
 
-/* ✅ LISTEN */
+/* Listen */
 ul {
   list-style: none;
   padding-left: 0;
@@ -137,14 +103,14 @@ ul li::before {
   color: #4f709c;
 }
 
-/* ✅ TESTIMONIALS */
+/* Testimonials */
 .testimonials small {
   display: block;
   margin-top: 0.5rem;
   color: #666;
 }
 
-/* ✅ KONTAKTFORMULAR */
+/* Kontaktformular */
 form {
   display: flex;
   flex-direction: column;
@@ -154,4 +120,64 @@ input, textarea {
   padding: 0.8rem;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-family:
+  font-family: inherit;
+}
+button {
+  background-color: #64b478;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #519962;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgba(180, 235, 190, 0.3);
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+.footer-nav {
+  margin-bottom: 1rem;
+}
+.footer-nav a {
+  margin: 0 1rem;
+  color: #4f709c;
+  text-decoration: none;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop-Optimierung */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section {
+    padding: 6rem 3rem;
+  }
+}
