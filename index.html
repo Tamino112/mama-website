@@ -9,15 +9,18 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <nav>
-    <a href="index.html">Start</a>
-    <a href="#ueber">Über mich</a>
-    <a href="angebote.html">Angebote</a>
-    <a href="#kontakt">Kontakt</a>
+    <div class="nav-links">
+      <a href="index.html">Start</a>
+      <a href="#ueber">Über mich</a>
+      <a href="angebote.html">Angebote</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
   </nav>
 
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-
+  <!-- Mobiles Menü -->
   <div id="mobile-menu" class="mobile-menu">
     <a href="index.html">Start</a>
     <a href="#ueber">Über mich</a>
@@ -25,6 +28,7 @@
     <a href="#kontakt">Kontakt</a>
   </div>
 
+  <!-- Hero -->
   <header id="start">
     <div class="hero">
       <img src="logo.png" alt="Logo" class="hero-logo" />
@@ -33,6 +37,7 @@
     </div>
   </header>
 
+  <!-- Vision -->
   <section class="values">
     <h2>Meine Vision</h2>
     <div class="card-grid">
@@ -42,6 +47,7 @@
     </div>
   </section>
 
+  <!-- Über mich -->
   <section id="ueber">
     <h2>Über mich</h2>
     <div class="card">
@@ -54,6 +60,7 @@
     </div>
   </section>
 
+  <!-- Testimonials -->
   <section class="testimonials">
     <h2>Was andere sagen</h2>
     <div class="card-grid">
@@ -62,6 +69,7 @@
     </div>
   </section>
 
+  <!-- Kontakt -->
   <section id="kontakt">
     <h2>Kontakt</h2>
     <div class="card">
@@ -77,6 +85,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="footer-nav">
       <a href="#start">Start</a>
@@ -87,10 +96,10 @@
     <p>&copy; 2025 Weiterbildung mit [Name]</p>
   </footer>
 
+  <!-- JS für mobile Menü -->
   <script>
     function toggleMenu() {
-      const menu = document.getElementById("mobile-menu");
-      menu.classList.toggle("open");
+      document.getElementById("mobile-menu").classList.toggle("open");
     }
   </script>
 
