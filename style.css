@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* Navbar (Desktop) */
+/* Navbar Desktop */
 nav {
   position: fixed;
   top: 0;
@@ -75,7 +75,7 @@ nav a:hover {
   opacity: 0.97;
 }
 
-/* Hero-Bereich */
+/* Hero */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -136,22 +136,6 @@ ul li::before {
   color: #4f709c;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  background-color: rgba(180, 235, 190, 0.3);
-  padding: 2rem;
-  font-size: 0.9rem;
-}
-.footer-nav {
-  margin-bottom: 1rem;
-}
-.footer-nav a {
-  margin: 0 1rem;
-  color: #4f709c;
-  text-decoration: none;
-}
-
 /* Kontaktformular */
 form {
   display: flex;
@@ -161,4 +145,23 @@ form {
 input, textarea {
   padding: 0.8rem;
   border-radius: 8px;
-  border: 
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+button {
+  background-color: #64b478;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #519962;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgba(180, 235, 190, 
