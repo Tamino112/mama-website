@@ -16,6 +16,17 @@
     <a href="#kontakt">Kontakt</a>
   </nav>
 
+  <!-- Hamburger-Menü fürs Handy -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <!-- Mobiles Menü -->
+  <div id="mobile-menu" class="mobile-menu">
+    <a href="index.html">Start</a>
+    <a href="#ueber">Über mich</a>
+    <a href="angebote.html">Angebote</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+
   <header id="start">
     <div class="hero">
       <img src="logo.png" alt="Logo" class="hero-logo" />
@@ -27,25 +38,16 @@
   <section class="values">
     <h2>Meine Vision</h2>
     <div class="card-grid">
-      <div class="card">
-        <h3>Persönlich</h3>
-        <p>Individuelle Begleitung, die sich an echten Bedürfnissen orientiert.</p>
-      </div>
-      <div class="card">
-        <h3>Praktisch</h3>
-        <p>Alltagsnahe Methoden, sofort umsetzbar – ohne Theorieballast.</p>
-      </div>
-      <div class="card">
-        <h3>Wirkungsvoll</h3>
-        <p>Trainings, die nachhaltig Veränderung schaffen und motivieren.</p>
-      </div>
+      <div class="card"><h3>Persönlich</h3><p>Begleitung, die sich an echten Bedürfnissen orientiert.</p></div>
+      <div class="card"><h3>Praktisch</h3><p>Methoden, sofort umsetzbar – ohne Theorieballast.</p></div>
+      <div class="card"><h3>Wirkungsvoll</h3><p>Trainings, die nachhaltig Veränderung schaffen.</p></div>
     </div>
   </section>
 
   <section id="ueber">
     <h2>Über mich</h2>
     <div class="card">
-      <p>Ich heiße [Name] und begleite Menschen dabei, ihr Potenzial zu entdecken und zu entfalten. Mit jahrelanger Erfahrung verbinde ich Fachwissen mit Menschlichkeit.</p>
+      <p>Ich heiße [Name] und begleite Menschen dabei, ihr Potenzial zu entdecken und zu entfalten.</p>
       <ul>
         <li>Zertifizierte Trainerin & Coach</li>
         <li>Soft Skills & mentale Stärke</li>
@@ -57,35 +59,25 @@
   <section class="testimonials">
     <h2>Was andere sagen</h2>
     <div class="card-grid">
-      <div class="card">
-        <p>„Einfühlsam, strukturiert und voller Energie – das Training war ein Wendepunkt.“</p>
-        <small>– Klientin aus Lübeck</small>
-      </div>
-      <div class="card">
-        <p>„Meine Mitarbeitenden sind sichtbar motivierter. Danke für die tolle Unterstützung!“</p>
-        <small>– Unternehmerin</small>
-      </div>
+      <div class="card"><p>„Einfühlsam und voller Energie – das Training war ein Wendepunkt.“</p><small>– Klientin</small></div>
+      <div class="card"><p>„Meine Mitarbeitenden sind motivierter. Danke für die Unterstützung!“</p><small>– Unternehmerin</small></div>
     </div>
   </section>
 
-  <!-- 💬 Kontaktformular -->
-<section id="kontakt">
-  <h2>Kontakt</h2>
-  <div class="card">
-    <form action="https://formspree.io/f/mwpbdgln" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="nachricht">Nachricht</label>
-      <textarea id="nachricht" name="message" rows="5" required></textarea>
-
-      <button type="submit">Absenden</button>
-    </form>
-  </div>
-</section>
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <div class="card">
+      <form action="https://formspree.io/f/mwpbdgln" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required />
+        <label for="nachricht">Nachricht</label>
+        <textarea id="nachricht" name="message" rows="5" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <div class="footer-nav">
@@ -94,8 +86,16 @@
       <a href="angebote.html">Angebote</a>
       <a href="#kontakt">Kontakt</a>
     </div>
-    <p>&copy; 2025 Weiterbildung mit [Name] · kontakt@beispiel.de</p>
+    <p>&copy; 2025 Weiterbildung mit [Name]</p>
   </footer>
+
+  <!-- JavaScript für Menü -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("open");
+    }
+  </script>
 
 </body>
 </html>
