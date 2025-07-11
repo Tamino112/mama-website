@@ -10,7 +10,7 @@ body {
   color: #333;
 }
 
-/* Navbar */
+/* Navbar (Desktop) */
 nav {
   position: fixed;
   top: 0;
@@ -25,12 +25,45 @@ nav {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 nav a:hover {
   opacity: 0.8;
+}
+
+/* Hamburger Menü */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #64b478;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100%;
+  padding: 4rem 1rem;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.mobile-menu.open {
+  display: flex;
 }
 
 /* Logo */
@@ -42,7 +75,7 @@ nav a:hover {
   opacity: 0.97;
 }
 
-/* Hero */
+/* Hero-Bereich */
 .hero {
   text-align: center;
   padding: 5rem 2rem;
@@ -64,7 +97,7 @@ section {
   max-width: 1000px;
   margin: auto;
   animation: fadeInUp 1s ease forwards;
-  opacity: 0;
+  opacity: 1;
 }
 h2 {
   text-align: center;
@@ -99,3 +132,33 @@ ul li {
 ul li::before {
   content: "✔";
   position: absolute;
+  left: 0;
+  color: #4f709c;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgba(180, 235, 190, 0.3);
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+.footer-nav {
+  margin-bottom: 1rem;
+}
+.footer-nav a {
+  margin: 0 1rem;
+  color: #4f709c;
+  text-decoration: none;
+}
+
+/* Kontaktformular */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+input, textarea {
+  padding: 0.8rem;
+  border-radius: 8px;
+  border:
